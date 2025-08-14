@@ -1,0 +1,125 @@
+/* POSTAR PUBLICAÇÃO */
+main {
+    margin-top: 25px;
+}
+
+.formulario__publicacao {
+    width: 90%;
+    max-width: 610px;
+    background-color: var(--cor-branca);
+    padding: 25px;
+    border: var(--borda);
+    border-radius: var(--borda-arredondada);
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 10px;
+}
+
+.formulario__publicacao>textarea {
+    width: 100%;
+    height: 80px;
+    background-color: var(--cor-cinza-claro);
+    border: var(--borda);
+    padding: 10px;
+    outline: none;
+    /*Remove o contorno*/
+    resize: none;
+    /*Desabilita a opçao de redimensionar*/
+    font-size: 14px;
+    color: var(--cor-cinza-escuro2);
+    border-radius: var(--borda-arredondada);
+}
+
+.formulario__publicacao>textarea::placeholder {
+    color: var(--cor-cinza-medio);
+    font-weight: 500;
+}
+
+.formulario__botoes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/* SEÇÃO PUBLICAÇÕES */
+#publicacoes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publicacoes__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 610px;
+    background-color: var(--cor-branca);
+    border-radius: var(--borda-arredondada);
+}
+
+.publicacoes__card>header>a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.publicacoes__card__imagem {
+    background: url(../imagens/post-gabigordo.svg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    /* max-width: 610px; */
+    height: 346px;
+}
+
+.publicacoes__card>footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 25px;
+    gap: 8px;
+}
+
+.publicacoes__card>footer>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 500;
+}
+
+.publicacoes__card>footer>div>div {
+    display: flex;
+    gap: 10px;
+}
+
+.publicacoes__card>footer>div>p {
+    font-size: var( --tamanho-fonte-xs);
+}
+
+.publicacoes__card>footer>p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.publicacoes__card>footer>p>span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+
+}
+
+.publicacoes__card>footer>span {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro1);
+}

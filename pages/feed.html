@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConnect - Feed</title>
+
+    <link rel="icon" type="image/x-icon" href="../imagens/logo-devconnect-sm.svg">
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/feed.css">
+</head>
+
+<body>
+    <h1>Tela Feed - DevConnect</h1>
+
+    <header id="cabecalho">
+        <div class="cabecalho__alinhamento container">
+            <img id="logo__desktop" src="../imagens/logo-devconnect-md.svg"
+                alt="Logo DevConnect para dispositivos desktop">
+            <img id="logo__mobile" src="../imagens/logo-devconnect-sm.svg"
+                alt="Logo DevConnect para dispositivos movéis">
+
+            <nav class="menu">
+                <a class="menu__link" href="index.html" title="Ínicio">
+                    <img src="../imagens/icone-casa-azul.svg" alt="Ícone de uma casa">
+                </a>
+                <a class="menu__link" href="#" title="Curtidas">
+                    <img src="../imagens/icone-coracao-azul.svg" alt="Ícone de um coração">
+                </a>
+                <a href="#" title="Ver perfil">
+                    <div id="avatar"></div>
+                </a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <form class="formulario__publicacao">
+            <h2>Publicação</h2>
+
+            <textarea id="" placeholder="Digite a descrição do post..."></textarea>
+
+            <div class="formulario__botoes">
+                <label for="formulario__file" class="formulario__botao botao__cinza">Faça upload da sua imagem
+                    aqui....</label>
+                <input type="file" id="formulario__file">
+                <button type="submit" class="formulario__botao botao__azul">Postar</button>
+            </div>
+        </form>
+
+        <section id="publicacoes">
+            <div class="publicacoes__card">
+                <header>
+                    <a href="">
+                        <div id="avatar"></div>
+                        gabigordo
+                    </a>
+                </header>
+                <div class="publicacoes__card__imagem"></div>
+                <footer>
+                    <div>
+                        <div>
+                            <img src="../imagens/icone-coracao-preto.svg" alt="Ícone de um coração na cor preta">
+                            <img src="../imagens/icone-comentario-preto.svg" alt="Ícone de um diálogo na cor preta">
+                        </div>
+                        <p>2077 curtidas</p>
+
+                    </div>
+                    <p>gabigordo<span>Amo vocês mil milhões ❤</span></p>
+                    <span>Ver mais comentários...</span>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
