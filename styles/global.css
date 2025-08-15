@@ -116,10 +116,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 25px;
     width: 100%;
-    min-height: calc(100vh - 80px - 25px);
 }
 
 /* FIM MAIN */
@@ -152,7 +149,7 @@ main {
 
 .botao__azul {
     background-color: var(--cor-azul);
-    width: var(--largura-botao-sm);
+    /* width: var(--largura-botao-sm); */
     color: var(--cor-branca);
 }
 
