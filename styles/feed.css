@@ -1,5 +1,8 @@
 /* POSTAR PUBLICAÇÃO */
 main {
+    flex-direction: column;
+    gap: 25px;
+    min-height: calc(100vh - 80px - 25px);
     margin-top: 25px;
 }
 
@@ -104,7 +107,7 @@ main {
 }
 
 .publicacoes__card>footer>div>p {
-    font-size: var( --tamanho-fonte-xs);
+    font-size: var(--tamanho-fonte-xs);
 }
 
 .publicacoes__card>footer>p {
