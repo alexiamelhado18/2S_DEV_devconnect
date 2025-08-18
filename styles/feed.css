@@ -78,51 +78,49 @@ main {
     font-size: 14px;
 }
 
-.publicacoes__card__imagem {
-    background: url(../imagens/post-gabigordo.svg) no-repeat center;
-    background-size: cover;
+.publicacoes__card>figure>img {
+    object-fit: cover;
+    /*especificar como um objeto (imagem, vídeo, iframe ou embed) deve ser redimensionado para se ajustar ao seu contêiner.*/
+    object-position: left;
     width: 100%;
-    /* max-width: 610px; */
     height: 346px;
 }
 
-.publicacoes__card>footer {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 25px;
-    gap: 8px;
+.publicacoes__card>figure>div,
+.publicacoes__card>figure>figcaption,
+.publicacoes__card>a {
+    margin: 8px 25px;
 }
 
-.publicacoes__card>footer>div {
+.publicacoes__card>figure>div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-weight: 500;
 }
 
-.publicacoes__card>footer>div>div {
+.publicacoes__card>figure>div>div {
     display: flex;
     gap: 10px;
 }
 
-.publicacoes__card>footer>div>p {
+.publicacoes__card>figure>div>p {
+    font-weight: 500;
     font-size: var(--tamanho-fonte-xs);
 }
 
-.publicacoes__card>footer>p {
+.publicacoes__card>figure>figcaption {
     font-size: 16px;
     font-weight: 500;
 }
 
-.publicacoes__card>footer>p>span {
+.publicacoes__card>figure>figcaption>span {
     font-size: 14px;
     font-weight: 400;
     margin-left: 10px;
-
 }
 
-.publicacoes__card>footer>span {
+.publicacoes__card>a {
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-cinza-escuro1);
+    text-decoration: none;
 }
