@@ -1,0 +1,78 @@
+main {
+    min-height: 100vh;
+}
+
+main>div {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.formulario__cadastro,
+main>div>div:nth-child(2) {
+    padding: 8%;
+    width: 100%;
+
+    background-color: var(--cor-branca);
+    border-radius: var(--borda-arredondada);
+    border: var(--borda);
+}
+
+.formulario__cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.formulario__cadastro>img {
+    width: 206px;
+    height: 76px;
+}
+
+.formulario__cadastro>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario__cadastro>div>input {
+    width: 100%;
+    height: var(--altura-botao);
+    border: var(--borda);
+    background-color: var(--cor-cinza-claro);
+    outline: none;
+    padding-left: 4px;
+    color: var(--cor-cinza-escuro2);
+
+}
+
+.formulario__cadastro>div>label {
+    color: var(--cor-cinza-escuro2);
+    font-size: 14px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.formulario__cadastro>button {
+    margin-top: 5%;
+}
+
+.formulario__cadastro>p {
+    color: var(--cor-cinza-escuro3);
+    font-size: 12px;
+    text-align: center;
+}
+
+main>div>div:nth-child(2)>p {
+    font-size: 16px;
+    text-align: center;
+}
+
+main>div>div:nth-child(2)>p>a {
+    color: var(--cor-azul);
+    text-decoration: none;
+}
