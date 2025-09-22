@@ -1,0 +1,99 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#storys {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 30px;
+}
+
+#storys::-webkit-scrollbar {
+    width: 0;
+}
+
+.card-story {
+    /* background-color: cornflowerblue; */
+}
+
+.card-story>button {
+    background-color: transparent;
+    border: none;
+    /* text-decoration: none; */
+    /*SÓ PARA QUEM ESTÁ COM A TAG <a>*/
+
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+}
+
+.card-story>button>img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+/* seção criar publi */
+.formulario-botao-azul {
+    width: 135px;
+}
+
+#criar-publi {
+    padding: 10px;
+}
+
+#criar-publi>h2 {
+    color: var(--cor-cinza-escuro2);
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#criar-publi>form>textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: none;
+    /*desabilita a redimensão do tamanho do elemento*/
+    border: var(--borda);
+
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+#criar-publi>form>textarea::placeholder {
+    color: var(--cor-cinza-medio);
+}
+
+#criar-publi>form>footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+
+/* RESPONSIVO */
+@media only screen and (max-width: 446px) {
+    #criar-publi>form>footer>div, button.formulario-botao-azul{
+        width: 100%;
+    }
+}

@@ -1,0 +1,127 @@
+main {
+    min-height: 100vh;
+    /*minimo de altura da janela do dispositivo*/
+    width: 100%;
+    display: flex;
+    /*ativa o flex*/
+    justify-content: center;
+    margin: 20px 0;
+}
+
+main>div {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+#bio>button,
+#bio>nav>button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#bio>nav {
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+#bio>nav>a {
+    text-decoration: none;
+}
+
+#bio>nav>a,
+.bio-info,
+.bio-acao {
+    font-size: var(--tamanho-fonte-md);
+}
+
+.bio-info {
+    color: var(--cor-preto);
+}
+
+#bio>nav>span {
+    width: 100%;
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 400;
+}
+
+.nome-completo {
+    font-weight: 800;
+    font-size: var(--tamanho-fonte-md);
+}
+
+.bio-acao {
+    color: var(--cor-azul);
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--cor-cinza-medio);
+}
+
+.titulo-publi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+.titulo-publi>h3 {
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-md);
+}
+
+.card-publi-texto>p {
+    min-height: 48px;
+    margin: 0 15px;
+}
+
+.interacoes-publicacao {
+    order: 0;
+}
+
+.card-publi-texto>button {
+    margin: 15px;
+    text-align: left;
+    color: var(--cor-cinza-medio);
+    font-size: var(--tamanho-fonte-sm);
+
+}
+
+
+/* RESPONSIVO */
+@media only screen and (max-width: 400px) {
+    #bio {
+        flex-direction: column;
+    }
+
+    #bio>nav {
+        width: 165px;
+        /* flex-direction: column; */
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    #bio>nav>span {
+        text-align: center;
+    }
+}

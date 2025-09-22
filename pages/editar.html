@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aléxia e Eduardo">
+    <meta name="description" content="Site da empresa DevConnect">
+
+    <title>Tela Editar Perfil - DevConnect</title>
+
+    <link rel="shortcut icon" href="../assets/images/logo-devconnect-sm.svg" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/editar.css">
+</head>
+
+<body>
+    <h1>Tela Editar Perfil - DevConnect</h1>
+    <!-- Inicio Header -->
+    <header id="cabecalho">
+        <nav>
+            <a href="./feed.html">
+                <img id="logo-desktop" src="../assets/images/logo-devconnect-md.svg" alt="Logo do DevConnect">
+            </a>
+            <a href="./feed.html">
+                <img id="logo-mobile" src="../assets/images/logo-devconnect-sm.svg" alt="Logo do DevConnect">
+            </a>
+
+            <div class="cabecalho-acoes">
+                <a href="./feed.html">
+                    <img src="../assets/images/icone-casa-azul.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../assets/images/icone-coracao-azul.svg" alt="">
+                </a>
+                <a href="perfil.html">
+                    <img class="foto-perfil" src="../assets/images/t-moura.jpg" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim Header -->
+
+    <main>
+        <div>
+            <form action="">
+                <h2>Editar Perfil</h2>
+                <section id="secao-alterar-foto">
+                    <img src="../assets/images/t-moura.jpg" alt="">
+                    <div>
+                        <span>alexia</span>
+                        <label for="campo-upload" id="texto-upload">Alterar foto do perfil</label>
+                        <input type="file" name="" id="campo-upload">
+                    </div>
+                </section>
+
+                <div class="formulario-campos">
+                    <label for="nome-completo">Nome completo:</label>
+                    <input type="text" name="" id="nome-completo">
+                </div>
+
+                <div class="formulario-campos">
+                    <label for="nome-de-usuario">Nome de usuário:</label>
+                    <input type="text" name="" id="nome-de-usuario">
+                </div>
+
+                <div class="formulario-campos">
+                    <label for="nome-de-usuario">E-mail:</label>
+                    <input type="email" name="" id="nome-de-usuario">
+                </div>
+
+                <button type="submit" class="formulario-botao-azul">Alterar</button>
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
